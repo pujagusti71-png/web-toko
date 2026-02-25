@@ -1,0 +1,261 @@
+.admin-customers {
+  padding: 0;
+}
+
+.customers-header {
+  margin-bottom: 24px;
+}
+
+.customers-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.customers-count {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.customers-table-wrapper {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.customers-table thead {
+  background: #f5f7fa;
+  border-bottom: 2px solid #e1e4e8;
+}
+
+.customers-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.customers-table tbody tr {
+  border-bottom: 1px solid #e1e4e8;
+  transition: background 0.2s ease;
+}
+
+.customers-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+.customers-table td {
+  padding: 16px;
+  color: #333;
+}
+
+.customer-name {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.customer-email {
+  color: #667eea;
+  font-size: 13px;
+}
+
+.customer-phone {
+  color: #666;
+  font-size: 13px;
+}
+
+.customer-address {
+  color: #666;
+  font-size: 13px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action-cell {
+  text-align: center;
+}
+
+.btn-view {
+  padding: 8px 16px;
+  border: 1px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.btn-view:hover {
+  background: #667eea;
+  color: white;
+}
+
+.no-data {
+  padding: 60px 24px;
+  text-align: center;
+  color: #999;
+}
+
+.no-data p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 24px;
+  color: #666;
+}
+
+.error-message {
+  background: #ffe8e8;
+  color: #d32f2f;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border-left: 4px solid #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .customers-table {
+    font-size: 12px;
+  }
+
+  .customers-table th,
+  .customers-table td {
+    padding: 12px 8px;
+  }
+
+  .customer-address {
+    max-width: 100px;
+  }
+
+  .btn-view {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  color: #1a1a1a;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row label {
+  font-weight: 600;
+  color: #555;
+  min-width: 120px;
+}
+
+.detail-row span {
+  color: #1a1a1a;
+  word-break: break-word;
+  text-align: right;
+  flex: 1;
+  padding-left: 16px;
+}
+
+.modal-footer {
+  padding: 20px;
+  border-top: 1px solid #e1e4e8;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-close {
+  padding: 10px 24px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-close:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+}
